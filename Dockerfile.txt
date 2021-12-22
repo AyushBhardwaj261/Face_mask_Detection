@@ -9,4 +9,5 @@ RUN git clone https://github.com/AyushBhardwaj321/face-mask.git
 COPY requirements.txt /tmp/
 RUN pip install --requirement /tmp/requirements.txt
 COPY . /tmp/
-CMD ["python3","detect_mask_video.py"]
+WORKDIR /face-mask
+CMD ["python3","detect_mask_photo.py"]
