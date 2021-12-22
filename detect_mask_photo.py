@@ -8,7 +8,7 @@ import os
 def mask_image():
 	# construct the argument parser and parse the arguments
 	ap = argparse.ArgumentParser()
-	ap.add_argument("-i", "--image", default="images/pic1.jpeg",
+	ap.add_argument("-i", "--image", default="images/pic2.jpg",
 		help="path to input image")
 	ap.add_argument("-f", "--face", type=str,
 		default="face_detector",
