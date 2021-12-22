@@ -5,8 +5,8 @@ RUN apt-get install ffmpeg libsm6 libxext6  -y
 RUN apt-get install -y python
 RUN apt-get install -y git
 RUN apt-get install -y pip
-RUN git clone https://github.com/AyushBhardwaj321/face_mask_detection.git
-WORKDIR /face_mask_detection
-RUN pip install -r requirements.txt
-CMD ["python","./detect_mask_video.py" 
-
+RUN git clone https://github.com/AyushBhardwaj321/face-mask.git
+COPY requirements.txt /tmp/
+RUN pip install --requirement /tmp/requirements.txt
+COPY . /tmp/
+CMD ["python3","detect_mask_video.py"]

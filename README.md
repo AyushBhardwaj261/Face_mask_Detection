@@ -40,8 +40,6 @@ You can either create a docker image as shown below or you can pull the docker i
 `COPY requirements.txt /tmp/` \
 `RUN pip install --requirement /tmp/requirements.txt` \
 `COPY . /tmp/` \
-To create image from Dockerfile, run this command: \
-`$ docker build -f Dockerfile -t "face-mask" .` \
 Congratulation, you just created docker image from docker file. \
 To pull the docker image from docker hub, type this command: \
 `$ docker pull face_mask_detection` \
