@@ -55,7 +55,8 @@ where:
 * `volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"` means the X11 server (usuall Xorg these days) communicates with clients like xterm, firefox, etc via some reliable stream of bytes. In simple words it will bind the volume between your host machine and docker machine.
 *  `device="/dev/video0:/dev/video0"` helps in accessing the video device.
 * `privileged = True` means docker will enable access to all devices on the host as well as set some configuration in AppArmor or SELinux to allow the container nearly all the same access to the host as processes running outside containers on the host.
-
+## Flowchart of training
+![Flowchart of different phase](https://github.com/AyushBhardwaj321/face_mask/blob/main/images/face-mask%20flowchart.png)
 ## References 
 1. https://docs.docker.com/engine/reference/run/
 
