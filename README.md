@@ -56,7 +56,7 @@ where:
 *  `device="/dev/video0:/dev/video0"` helps in accessing the video device.
 * `privileged = True` means docker will enable access to all devices on the host as well as set some configuration in AppArmor or SELinux to allow the container nearly all the same access to the host as processes running outside containers on the host.
 ## Flowchart of training
-![Flowchart of different phase](https://github.com/AyushBhardwaj321/face_mask/blob/main/images/face-mask%20flowchart.png)
+![Flowchart of different phase](https://github.com/AyushBhardwaj321/face_mask/blob/main/images/face-mask%20detector%20flowchart.png)
 ## References 
 1. https://docs.docker.com/engine/reference/run/
 
