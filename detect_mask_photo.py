@@ -93,7 +93,7 @@ def mask_image():
 			cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
 
 	# show the output image
-	cv2.imshow("Output", image)
+	cv2.imwrite("Output.png", image)
 	cv2.waitKey(0)
 	
 if __name__ == "__main__":
