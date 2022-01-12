@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -f Dockerfile -t facemask .'
+                sh 'docker build -f Dockerfile.txt -t facemask .'
             }
         }
         stage('Test') {
