@@ -1,5 +1,0 @@
-git clone https://github.com/AyushBhardwaj321/face_mask.git
-cd face_mask
-chmod +x run.sh
-cd Face-Mask-Detection
-python3 detect_mask_video.py
